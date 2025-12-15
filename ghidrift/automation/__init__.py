@@ -1,0 +1,1 @@
+"""PyGhidra automation scripts for GhidRift"""

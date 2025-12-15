@@ -1,0 +1,22 @@
+# Core dependencies
+requests>=2.25.0
+zipfile-deflate64>=0.2.0
+ar>=1.0.0  # For extracting .rlib archives
+
+# Ghidra integration
+ghidra-bridge>=0.3.0
+
+# Development and testing
+pytest>=6.0.0
+pytest-cov>=2.10.0
+black>=21.0.0
+flake8>=3.8.0
+mypy>=0.800
+
+# Documentation
+sphinx>=4.0.0
+sphinx-rtd-theme>=0.5.0
+
+# Optional: Performance optimization
+numpy>=1.20.0
+pandas>=1.3.0

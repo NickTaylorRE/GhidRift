@@ -1,0 +1,6 @@
+services:
+  ghidrift:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ghidrift/analyzer:latest
