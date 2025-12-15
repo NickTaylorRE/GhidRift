@@ -1,10 +1,10 @@
 # GhidRift
 
-A Ghidra-based tool for enhanced Rust malware analysis through pattern matching and function identification. GhidRift is inspired by Microsoft's [RIFT (Rust Interactive Function Tool)](https://github.com/microsoft/RIFT) but adapted for Ghidra's architecture and capabilities.
+A Ghidra-based tool for enhanced Rust malware analysis through pattern matching and function identification. GhidRift is a Ghidra port of Microsoft's [RIFT (Rust Interactive Function Tool)](https://github.com/microsoft/RIFT), with some design decisions made which match Ghidra's available tooling.
 
 ## Overview
 
-GhidRift enhances Rust binary analysis by leveraging Ghidra's advanced features including FunctionID signatures and BSIM (Binary Similarity Database) for comprehensive function identification and matching. Unlike RIFT's approach of using IDA Pro with FLIRT signatures and Diaphora diffing, GhidRift integrates natively with Ghidra's signature and similarity analysis systems.
+GhidRift enhances Rust binary analysis by leveraging Ghidra's advanced features including FunctionID signatures and BSIM (Binary Similarity Database) for comprehensive function identification and matching. RIFT uses IDA Pro with FLIRT signatures and Diaphora diffing. GhidRift integrates natively with Ghidra's FunctionID signatures and BSIM similarity analysis systems.
 
 ## Key Features
 
@@ -149,9 +149,9 @@ This project is currently in development. Contributions and feedback are welcome
 
 ## License
 
-*License information to be determined*
+This project is licensed under the MIT License - see the [LICENSE.txt](LICENSE.txt) file for details.
 
 ## Acknowledgments
 
-- Microsoft Research for the original RIFT project and methodology
+- **Microsoft Research** for creating the original [RIFT project](https://github.com/microsoft/RIFT), which pioneered this approach to Rust binary analysis. GhidRift is a ground-up reimplementation of RIFT's concepts for the Ghidra platform.
 - NSA for Ghidra and its powerful analysis capabilities
