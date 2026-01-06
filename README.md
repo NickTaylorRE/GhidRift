@@ -1,6 +1,6 @@
 # GhidRift
 
-A Ghidra-based tool for enhanced Rust malware analysis through pattern matching and function identification. GhidRift is a Ghidra port of Microsoft's [RIFT (Rust Interactive Function Tool)](https://github.com/microsoft/RIFT), with some design decisions made which match Ghidra's available tooling.
+A Ghidra-based tool for enhanced Rust malware analysis through pattern matching and function identification. GhidRift is a recreation of Microsoft's [RIFT (Rust Interactive Function Tool)](https://github.com/microsoft/RIFT) for Ghidra, with some design decisions made which match Ghidra's available tooling.
 
 ## Overview
 
