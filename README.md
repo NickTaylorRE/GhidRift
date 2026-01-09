@@ -13,17 +13,6 @@ GhidRift enhances Rust binary analysis by leveraging Ghidra's advanced features 
 - **BSIM Integration**: Leverages Ghidra's Binary Similarity Database for advanced function matching and similarity analysis
 - **Automated Workflow**: Streamlined process from binary analysis to function identification and annotation
 
-## Architecture Comparison with RIFT
-
-| Component | RIFT (IDA Pro) | GhidRift (Ghidra) |
-|-----------|----------------|-------------------|
-| **Signature System** | FLIRT signatures (.sig) | FunctionID signatures |
-| **Similarity Analysis** | Diaphora + SQLite | BSIM Database |
-| **Primary Interface** | IDA Pro Plugin | Ghidra Script/Plugin |
-| **Pattern Matching** | Byte-pattern + Fuzzy | FunctionID + BSIM similarity |
-| **Performance** | FLIRT (fast) + Diaphora (slow) | FunctionID (fast) + BSIM (optimized) |
-| **Integration** | External tools pipeline | Native Ghidra integration |
-
 ## Docker Usage (Recommended)
 
 GhidRift provides a Docker container for easy deployment and usage. This is the recommended way to use GhidRift as it handles all dependencies and environment setup automatically.
