@@ -18,14 +18,20 @@ GhidRift enhances Rust binary analysis by leveraging Ghidra's advanced features 
 GhidRift provides a Docker container for easy deployment and usage. This is the recommended way to use GhidRift as it handles all dependencies and environment setup automatically.
 
 ### Quick Start
+1. **Download ghidra**
+   The docker container uses the zipped public release of ghidra. 
+   ```bash
+   url=$(curl -s https://api.github.com/repos/NationalSecurityAgency/ghidra/releases/latest | grep "browser_download_url.*\.zip" | cut -d '"' -f 4) && \
+   curl -L -o "ghidra_releases/$(basename $url)" "$url"
+   ```
 
-1. **Build the container**:
+2. **Build the container**:
    ```bash
    # Build using docker compose (recommended)
    docker compose build ghidrift
    ```
 
-2. **Prepare your workspace**:
+3. **Prepare your workspace**:
    ```bash
    # Create working directory and copy your Rust binary
    mkdir ~/ghidrift-analysis
@@ -36,7 +42,7 @@ GhidRift provides a Docker container for easy deployment and usage. This is the 
    chmod 777 .
    ```
 
-3. **Run analysis** (generates both FIDB and BSIM signatures by default):
+4. **Run analysis** (generates both FIDB and BSIM signatures by default):
    ```bash
    docker run -v $(pwd):/workdir ghidrift/analyzer extract rust_binary
    ```
